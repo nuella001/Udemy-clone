@@ -39,12 +39,15 @@ button{
 }
 body{
     font-family: 'Nunito', sans-serif;
-    /* overflow-x: hidden; */
+   
 }
 header{
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.12);
     height: 12vh;
     padding: 10px ;
+}
+nav.mobile{
+    display: none;
 }
 nav{
     display: flex;
@@ -60,6 +63,9 @@ nav{
 .logo img{
     width: 100%;
     
+}
+.imgg{
+    display: none;
 }
 .search{
     width: 450px;
@@ -190,6 +196,9 @@ div.cont{
     align-items: center;
     margin-bottom: 50px;
 }
+.learn-mobile{
+    display: none;
+}
 .learn div{
     display: flex;
     align-items: center;
@@ -220,10 +229,13 @@ div.cont{
 .top{
     margin: 20px 20px 100px;
 }
-.grid2{
+.grid2  , .featured-grid2{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 15px;
+}
+.grid2-mobile{
+    display: none;
 }
 .grid2 div{
     cursor: pointer;
@@ -328,4 +340,193 @@ footer button {
 .flogo{
     background-color: white;
     padding: 5px;
+}
+
+
+
+
+@media (max-width:450px) {
+    h1,h2,h3{
+        font-size: 16px;
+    }
+   
+    nav{
+      display: none;
+    }
+    nav.mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .seachart{
+        display: flex;
+        gap: 10px;
+    }
+    .logo{
+        width: 40px;
+    }
+    .img{
+        display: none;
+    }
+    .imgg{
+        display: block;
+    }
+    .hero .txt{
+        position: relative;
+        background-color: white;
+        padding: 0px;
+    }
+    .hero .txt h1{
+        font-size: 18px;
+    }
+    .hero .txt h3{
+        font-size: 14px;
+        font-weight: normal;
+    }
+    .courses{
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+    .courses h2{
+        font-size: 20px;
+        margin: 10px auto;
+    }
+    .courses h3{
+        font-weight: normal;
+        font-size: 14px;
+    }
+    .links {
+        display: none;
+    }
+    .links a{
+        font-size: 14px;
+        font-weight: normal;
+        
+    }
+    div.cont{
+        border: none;
+        width: 100%;
+        padding: 10px;
+    }
+    .explore h3,p, #explore{
+        display: none;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+        gap: 20px;   
+    }
+    .learn{
+        display: none;
+    }
+    .learn-mobile{
+        display: grid;
+        grid-template-rows: 1fr;
+        width: 70%;
+        margin:0 auto 30px;
+        background-color: #f7f9fa;
+        padding: 10px;
+    }
+    .learn-mobile h2{
+        margin: 10px 0;
+        text-align: center;
+    }
+    .learn-mobile h3{
+        font-size: 12px;
+        font-weight: normal;
+    }
+    .learn-mobile div{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    #icon{
+        width: 60px;
+        height: 30px;
+    }
+
+
+    .top{
+        margin: 20px 20px 15px;
+    }
+
+    .grid2{
+       display: none;
+        
+    }
+    .grid2-mobile{
+        display: block;
+        width: 100%;
+        padding: 10px 5px;
+    }
+    .grid2-mobile span{
+        border: 1.1px solid silver;
+        border-radius: 20px;
+        padding: 7px 5px;
+        display: inline-block;
+        margin: 2px 1px;
+        font-size: 10px;
+        
+    }
+    .featured{
+        padding: 10px;
+    }
+    .featured-grid2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .featured-grid2 button {
+        width: 100%;
+        display: block;
+    }
+    .featured h2, h3{
+        margin: 10px 0;
+        font-size: 14px;
+    }
+    .featured p{
+        margin: 8px 0 20px;
+    }
+    .featured-grid2 a{
+        color: #5624d0;
+        font-size: 10px;
+        font-weight: bolder;
+    }
+    #full{
+        width: 100%;
+        margin: 10px auto;
+        padding: 5px;
+        font-size: 10px;
+    }
+
+    .companies{
+        margin: 40px 20px 50px;
+        
+    }
+
+    .upskill{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        padding: 14px;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-top: 20px;
+    }
+    .upskill h2{
+        margin: 10px 0;
+        font-size: 18px;
+    }
+    .upskill li{
+        margin: 10px 0;
+    }
+    .footer-links{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 50px;
+       
+    }
+    footer button {
+        margin: 15px 0;
+    }
+   
 }
