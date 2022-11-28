@@ -475,21 +475,19 @@ footer button {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+    .featured-grid2 p{
+        font-size: 10px;
+    }
     .featured-grid2 button {
-        width: 100%;
+        width: 95%;
         display: block;
     }
     .featured h2, h3{
         margin: 10px 0;
         font-size: 14px;
     }
-    /* .featured p{
-        margin: 8px 0 20px;
-    } */
     .featured-grid2 a{
-        color: #5624d0;
         font-size: 10px;
-        font-weight: bolder;
     }
     #full{
         width: 100%;
@@ -528,5 +526,4 @@ footer button {
     footer button {
         margin: 15px 0;
     }
-   
 }
